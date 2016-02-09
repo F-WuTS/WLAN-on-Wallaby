@@ -4,10 +4,13 @@
 
 * Clone this repo to a USB stick
 * Insert USB stick and reboot
-* Connect to your Wallby over WiFi
-* Open up Harrogate (192.168.125.1:8888)
+* Connect to your Wallby over USB
+* Open up Harrogate (192.168.124.1:8888)
 * Open Terminal and execute
-	`/mnt/WLAN-on-Wallaby/wlan.sh`
+	```
+	mount /dev/sda1 /mnt
+	/mnt/WLAN-on-Wallaby/wlan.sh
+	```
 
 Once the Wallaby has rebooted you can add WiFi network with **wpa_cli**.
 
