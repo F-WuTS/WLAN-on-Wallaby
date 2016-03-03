@@ -6,11 +6,8 @@
 * Insert USB stick and reboot
 * Connect to your Wallby over USB
 * Open up Harrogate (192.168.124.1:8888)
-* Open Terminal and execute
-	```
-	mount /dev/sda1 /mnt
-	/mnt/WLAN-on-Wallaby/wlan.sh
-	```
+* Open Terminal and execute  
+	`mount /dev/sda1 /mnt && /mnt/WLAN-on-Wallaby/wlan.sh`
 
 Once the Wallaby has rebooted you can add WiFi network with **wpa_cli**.
 
@@ -26,7 +23,9 @@ enable_network <number-add_network-returned>
 > OK
 ```
 
-If you want to assing an IP address over DHCP run `dhclient -v -r wlan0`
+If you want to assing an IP address over DHCP run `dhclient -v -r wlan0`.
 
-To undo all changes run `/mnt/wlan-undo.sh`
+To undo all changes run `/mnt/wlan-undo.sh`.
 
+## Caveats 
+The WiFi module integrated into the Wallaby is absolutely terrible. Usage of a USB WiFi dongle is pretty much necessary.
