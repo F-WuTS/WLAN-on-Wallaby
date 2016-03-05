@@ -9,7 +9,7 @@
 * Open Terminal and execute  
 	`mount /dev/sda1 /mnt && /mnt/WLAN-on-Wallaby/wlan.sh`
 
-Once the Wallaby has rebooted you can add WiFi network with **wpa_cli**.
+Once the Wallaby has rebooted you can add WiFi networks with **wpa_cli**.
 
 ```bash
 wpa_cli
