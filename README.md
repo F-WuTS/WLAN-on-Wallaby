@@ -3,7 +3,7 @@
 ## Usage
 
 * Clone this repo to a USB stick
-* Insert USB stick and reboot
+* Insert USB stick into your Wallaby
 * Connect to your Wallby over USB
 * Open up Harrogate (192.168.124.1:8888)
 * Open Terminal and execute  
@@ -20,6 +20,8 @@ set_network <number-add_network-returned> ssid "insert-your-ssid-here"
 set_network <number-add_network-returned> psk "insert-your-password-here"
 > OK
 enable_network <number-add_network-returned>
+> OK
+save # Try to reconnect to added networks after a reboot
 > OK
 ```
 
